@@ -27,6 +27,8 @@ jobs:
 
       - name: Install and run slmd
         run: |
+          python -m venv venv
+          source venv/bin/activate
           pip install -r requirements.txt
           slmd links.md > links_sorted.md
 
