@@ -24,10 +24,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2.2.2
 
       - name: Install and run slmd
         run: |
-          pip install slmd
+          python -m pip install slmd
           slmd links.md > links_sorted.md
 
       - name: Install and run pandoc
