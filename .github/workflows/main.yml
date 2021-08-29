@@ -28,18 +28,17 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
 
-      - name: Install and run slmd
+      - name: Install slmd
         run: |
           python3 -m venv venv
           source venv/bin/activate
           pip install slmd
-          slmd links.md > links_sorted.md
 
       - name: Install pandoc
         run: sudo apt install pandoc
 
-      - name: Run pandoc
-        run: pandoc links_sorted.md -f markdown -t html -s -o website/index.html
+      - name: Compile
+        run: ./compile
 
       - name: Install npm packages
         run: |
