@@ -28,7 +28,6 @@ jobs:
       - name: Install and run slmd
         run: |
           pip install -r requirements.txt
-          source venv/bin/activate
           slmd links.md > links_sorted.md
 
       - name: Install and run pandoc
