@@ -43,7 +43,9 @@ jobs:
         run: ./compile
 
       - name: Install npm packages
-        run: cd website && npm install
+        run: |
+          cd website
+          npm install
 
       - name: FTP Deploy
         # You may pin to the exact commit or the version.
