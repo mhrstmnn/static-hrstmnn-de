@@ -53,7 +53,7 @@ jobs:
           # protocol to deploy with - ftp, ftps, or ftps-legacy
           protocol: ftps # optional
           # An array of glob patterns, these files will not be included in the publish/delete process
-          exclude: # optional
+          exclude:
             - compile
             - links.md
             - links_sorted.md
