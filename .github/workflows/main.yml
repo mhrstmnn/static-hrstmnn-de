@@ -30,9 +30,9 @@ jobs:
 
       - name: Install and run slmd
         run: |
-          python -m pip install --upgrade pip
-          python -m pip install wheel
-          python -m pip install slmd
+          python3 -m pip install --upgrade pip
+          python3 -m pip install wheel
+          python3 -m pip install slmd
           slmd links.md > links_sorted.md
 
       - name: Install and run pandoc
