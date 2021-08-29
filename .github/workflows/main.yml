@@ -34,10 +34,12 @@ jobs:
       - name: Install and run pandoc
         run: |
           sudo apt install pandoc
-          pandoc links_sorted.md -f markdown -t html -s -o index.html
+          pandoc links_sorted.md -f markdown -t html -s -o website/index.html
 
       - name: Install npm packages
-        run: npm i
+        run: |
+          cd website
+          npm install
 
       - name: FTP Deploy
         # You may pin to the exact commit or the version.
@@ -52,11 +54,5 @@ jobs:
           password: ${{ secrets.CPANEL_FTP }}
           # protocol to deploy with - ftp, ftps, or ftps-legacy
           protocol: ftps # optional
-          # An array of glob patterns, these files will not be included in the publish/delete process
-          exclude: # optional
-            - compile
-            - links.md
-            - links_sorted.md
-            - package-lock.json
-            - package.json
-            - requirements.txt
+          # Folder to upload from, must end with trailing slash /
+          local-dir: ./website/ # optional
