@@ -1,0 +1,63 @@
+---
+title: Static Links
+lang: de
+---
+
+## CSS
+
+```html
+<link rel="stylesheet" type="text/css" href="URL" />
+```
+
+- [animate.min.css](node_modules/animate.css/animate.min.css)
+- [bootstrap.min.css](node_modules/bootstrap/dist/css/bootstrap.min.css)
+- [highlight.min.css](node_modules/@highlightjs/cdn-assets/styles/default.min.css)
+- [normalize.css](node_modules/normalize.css/normalize.css)
+- [prism.css](node_modules/prismjs/themes/prism.css)
+- [slick-theme.css](node_modules/slick-carousel/slick/slick-theme.css)
+- [slick.css](node_modules/slick-carousel/slick/slick.css)
+
+<br>
+
+## JavaScript
+
+```html
+<script src="URL" type="text/javascript"></script>
+```
+
+- [bootstrap.min.js](node_modules/bootstrap/dist/js/bootstrap.min.js)
+- [darkmode-js.min.js](node_modules/darkmode-js/lib/darkmode-js.min.js)
+- [highlight.min.js](node_modules/@highlightjs/cdn-assets/highlight.min.js)
+- [isMobile.min.js](node_modules/ismobilejs/dist/isMobile.min.js)
+- [jquery.min.js](node_modules/jquery/dist/jquery.min.js)
+- [popper.min.js](node_modules/@popperjs/core/dist/umd/popper.min.js)
+- [prism.js](node_modules/prismjs/prism.js)
+- [slick.min.js](node_modules/slick-carousel/slick/slick.min.js)
+- [validator.min.js](node_modules/validator/validator.min.js)
+- [vue.min.js](node_modules/vue/dist/vue.min.js)
+
+<div style="padding-bottom: 80px;"></div>
+
+<script src="node_modules/darkmode-js/lib/darkmode-js.min.js" type="text/javascript"></script>
+<script src="node_modules/ismobilejs/dist/isMobile.min.js" type="text/javascript"></script>
+<script>
+    var options = {}
+    if (isMobile.phone) {
+        options.bottom = "15px";
+        options.right = "15px";
+    } else {
+        options.bottom = "20px";
+        options.right = "20px";
+    }
+    const darkmode =  new Darkmode(options);
+    window.addEventListener("load", darkmode.showWidget());
+    function refreshBackground() {
+        if (darkmode.isActivated()) {
+            document.documentElement.style.background = "black";
+        } else {
+            document.documentElement.style.background = "white";
+        }
+    }
+    refreshBackground();
+    document.getElementsByTagName("button")[0].setAttribute("onclick", "refreshBackground()");
+</script>
