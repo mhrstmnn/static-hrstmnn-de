@@ -44,13 +44,6 @@ jobs:
 
       - name: Install npm packages
         run: cd website && npm install
-        
-      - name: Test
-        run: |
-          pwd
-          ls -la
-          ls -la website
-          
 
       - name: FTP Deploy
         # You may pin to the exact commit or the version.
