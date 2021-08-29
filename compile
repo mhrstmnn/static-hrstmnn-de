@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 source venv/bin/activate
 slmd links.md > links_sorted.md
 pandoc links_sorted.md -f markdown -t html -s -o website/index.html
