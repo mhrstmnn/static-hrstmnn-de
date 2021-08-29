@@ -1,5 +1,5 @@
 ---
-title: Static Links!
+title: Static Links
 lang: de
 ---
 
