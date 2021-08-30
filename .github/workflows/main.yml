@@ -28,13 +28,12 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
 
-      - name: Install slmd and sort links with slmd
+      - name: Install slmd and sort links
         run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install wheel
           python3 -m pip install slmd
-          cat links.md
-          slmd links.md > links_sorted.md
+          slmd links.md links_sorted.md
 
       - name: Build website with pandoc
         uses: docker://pandoc/core:latest
