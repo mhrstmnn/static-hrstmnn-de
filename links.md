@@ -1,5 +1,5 @@
 ---
-title: Static Links
+title: Static Links Test
 lang: de
 ---
 
@@ -11,11 +11,11 @@ lang: de
 
 - [bootstrap.min.css](node_modules/bootstrap/dist/css/bootstrap.min.css)
 - [animate.min.css](node_modules/animate.css/animate.min.css)
-- [normalize.css](node_modules/normalize.css/normalize.css)
 - [highlight.min.css](node_modules/@highlightjs/cdn-assets/styles/default.min.css)
 - [prism.css](node_modules/prismjs/themes/prism.css)
 - [slick.css](node_modules/slick-carousel/slick/slick.css)
 - [slick-theme.css](node_modules/slick-carousel/slick/slick-theme.css)
+- [normalize.css](node_modules/normalize.css/normalize.css)
 
 <br>
 
@@ -25,6 +25,7 @@ lang: de
 <script src="URL" type="text/javascript"></script>
 ```
 
+- [vue.min.js](node_modules/vue/dist/vue.min.js)
 - [jquery.min.js](node_modules/jquery/dist/jquery.min.js)
 - [popper.min.js](node_modules/@popperjs/core/dist/umd/popper.min.js)
 - [bootstrap.min.js](node_modules/bootstrap/dist/js/bootstrap.min.js)
@@ -33,7 +34,6 @@ lang: de
 - [darkmode-js.min.js](node_modules/darkmode-js/lib/darkmode-js.min.js)
 - [highlight.min.js](node_modules/@highlightjs/cdn-assets/highlight.min.js)
 - [prism.js](node_modules/prismjs/prism.js)
-- [vue.min.js](node_modules/vue/dist/vue.min.js)
 - [slick.min.js](node_modules/slick-carousel/slick/slick.min.js)
 
 <div style="padding-bottom: 80px;"></div>
@@ -41,23 +41,23 @@ lang: de
 <script src="node_modules/darkmode-js/lib/darkmode-js.min.js" type="text/javascript"></script>
 <script src="node_modules/ismobilejs/dist/isMobile.min.js" type="text/javascript"></script>
 <script>
-    var options = {}
-    if (isMobile.phone) {
-        options.bottom = "15px";
-        options.right = "15px";
+  var options = {}
+  if (isMobile.phone) {
+    options.bottom = "15px";
+    options.right = "15px";
+  } else {
+    options.bottom = "20px";
+    options.right = "20px";
+  }
+  const darkmode =  new Darkmode(options);
+  window.addEventListener("load", darkmode.showWidget());
+  function refreshBackground() {
+    if (darkmode.isActivated()) {
+      document.documentElement.style.background = "black";
     } else {
-        options.bottom = "20px";
-        options.right = "20px";
+      document.documentElement.style.background = "white";
     }
-    const darkmode =  new Darkmode(options);
-    window.addEventListener("load", darkmode.showWidget());
-    function refreshBackground() {
-        if (darkmode.isActivated()) {
-            document.documentElement.style.background = "black";
-        } else {
-            document.documentElement.style.background = "white";
-        }
-    }
-    refreshBackground();
-    document.getElementsByTagName("button")[0].setAttribute("onclick", "refreshBackground()");
+  }
+  refreshBackground();
+  document.getElementsByTagName("button")[0].setAttribute("onclick", "refreshBackground()");
 </script>
