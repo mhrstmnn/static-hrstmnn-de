@@ -46,7 +46,7 @@ lang: de
         options.bottom = "15px";
         options.right = "15px";
     
-        document.getElementById("package").style.marginTop = "5rem";
+        document.getElementById("package").style.marginTop = "5.5rem";
         document.getElementById("package").style.marginBottom = "3.5rem";
     } else {
         options.bottom = "20px";
