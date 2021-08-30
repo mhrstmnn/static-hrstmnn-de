@@ -1,7 +1,12 @@
 ---
 title: Static Links
+subtitle: test
 lang: de
 ---
+
+<div style="text-align: center;">
+  [package.json](package.json) und [package-lock.json]([package-lock.json)
+</div>
 
 ## CSS
 
