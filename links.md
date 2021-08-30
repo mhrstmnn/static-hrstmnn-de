@@ -45,6 +45,9 @@ lang: de
     if (isMobile.phone) {
         options.bottom = "15px";
         options.right = "15px";
+    
+        document.getElementById("package").style.paddingTop = "4rem";
+        document.getElementById("package").style.paddingBottom = "3rem";
     } else {
         options.bottom = "20px";
         options.right = "20px";
