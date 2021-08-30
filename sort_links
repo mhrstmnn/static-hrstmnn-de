@@ -2,8 +2,8 @@
 slmd links.md links_sorted.md
 if [ $? -eq 1 ]
 then
-	echo "I sorted something"
-	exit 0
+  echo "I sorted something"
+  exit 0
 else
 	echo "Nothing to sort"
 	exit 1
