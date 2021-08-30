@@ -28,10 +28,23 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
 
+      - name: Install slmd
+        run: |
+          python3 -m venv venv
+          source venv/bin/activate
+          pip install --upgrade pip
+          pip install wheel
+          pip install slmd
+
+      - name: Sort links with slmd
+        run: |
+          source venv/bin/activate
+          slmd links.md > links_sorted.md
+
       - name: Build website with pandoc
         uses: docker://pandoc/core:latest
         with:
-          args: "links.md -f markdown -t html -s -o website/index.html"
+          args: "links_sorted.md -f markdown -t html -s -o website/index.html"
 
       - name: FTP Deploy
         # You may pin to the exact commit or the version.
