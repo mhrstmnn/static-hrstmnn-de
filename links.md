@@ -1,5 +1,5 @@
 ---
-title: Static Links Test
+title: Static Links
 lang: de
 ---
 
