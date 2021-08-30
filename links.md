@@ -46,8 +46,8 @@ lang: de
         options.bottom = "15px";
         options.right = "15px";
     
-        document.getElementById("package").style.paddingTop = "4rem";
-        document.getElementById("package").style.paddingBottom = "3rem";
+        document.getElementById("package").style.marginTop = "4rem";
+        document.getElementById("package").style.marginBottom = "3rem";
     } else {
         options.bottom = "20px";
         options.right = "20px";
