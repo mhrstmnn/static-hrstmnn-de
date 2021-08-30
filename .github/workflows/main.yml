@@ -28,16 +28,14 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
 
-      - name: Install slmd
+      - name: Install slmd and run
         run: |
           python3 -m venv venv
           source venv/bin/activate
           pip install --upgrade pip
           pip install wheel
           pip install slmd
-          
-      - name: Sort markdown lists
-        run: slmd links.md > links_sorted.md
+          slmd links.md > links_sorted.md
 
       - name: Build website with pandoc
         uses: docker://pandoc/core:latest
