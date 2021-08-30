@@ -1,5 +1,3 @@
 #!/bin/bash
-pwd
-ls -la
-source venv/bin/activate
-slmd links.md > links_sorted.md
+source ./venv/bin/activate
+slmd ./links.md > ./links_sorted.md
