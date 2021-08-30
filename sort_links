@@ -1,2 +1,0 @@
-#!/bin/bash
-slmd links.md > links_sorted.md
