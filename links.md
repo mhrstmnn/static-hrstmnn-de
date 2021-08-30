@@ -36,11 +36,7 @@ lang: de
 - [prism.js](node_modules/prismjs/prism.js)
 - [slick.min.js](node_modules/slick-carousel/slick/slick.min.js)
 
-<div style="padding-bottom: 5rem;"></div>
-
-<div style="text-align: center;">[package.json](package.json) und [package-lock.json](package-lock.json)</div>
-
-<div style="padding-bottom: 2.5rem;"></div>
+<div style="text-align: center; margin-top: 5rem; margin-bottom: 2.5rem;">[package.json](package.json) und [package-lock.json](package-lock.json)</div>
 
 <script src="node_modules/darkmode-js/lib/darkmode-js.min.js" type="text/javascript"></script>
 <script src="node_modules/ismobilejs/dist/isMobile.min.js" type="text/javascript"></script>
