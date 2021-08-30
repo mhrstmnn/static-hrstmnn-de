@@ -1,6 +1,6 @@
 ---
 title: Static Links
-subtitle: [package.json](package.json) und [package-lock.json]([package-lock.json)
+subtitle: [package.json](package.json)
 lang: de
 ---
 
