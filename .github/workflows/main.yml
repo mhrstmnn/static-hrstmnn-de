@@ -33,14 +33,7 @@ jobs:
           python3 -m pip install --upgrade pip
           python3 -m pip install wheel
           python3 -m pip install slmd
-          if [ $(slmd links.md links_sorted.md) == "1" ]
-          then
-            echo "I sorted something"
-            exit 0
-          else
-            echo "Nothing to sort"
-            exit 1
-          fi
+          ./sort_links
 
       - name: Build website with pandoc
         uses: docker://pandoc/core:latest
