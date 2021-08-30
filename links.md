@@ -36,7 +36,7 @@ lang: de
 - [prism.js](node_modules/prismjs/prism.js)
 - [slick.min.js](node_modules/slick-carousel/slick/slick.min.js)
 
-<div style="padding-bottom: 80px;"></div>
+<div style="padding-bottom: 160px;"></div>
 
 <div style="text-align: center;">[package.json](package.json) und [package-lock.json](package-lock.json)</div>
 
