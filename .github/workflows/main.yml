@@ -33,8 +33,8 @@ jobs:
           python3 -m pip install --upgrade pip
           python3 -m pip install wheel
           python3 -m pip install slmd
+          cat links.md
           slmd links.md > links_sorted.md
-          exit 0
 
       - name: Build website with pandoc
         uses: docker://pandoc/core:latest
