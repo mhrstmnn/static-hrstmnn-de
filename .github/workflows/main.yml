@@ -37,9 +37,7 @@ jobs:
           pip install slmd
 
       - name: Sort links with slmd
-        run: |
-          source venv/bin/activate
-          slmd links.md > links_sorted.md
+        run: ./sort_links
 
       - name: Build website with pandoc
         uses: docker://pandoc/core:latest
