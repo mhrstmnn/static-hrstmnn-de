@@ -1,12 +1,8 @@
 ---
 title: Static Links
-subtitle: test
+subtitle: [package.json](package.json) und [package-lock.json]([package-lock.json)
 lang: de
 ---
-
-<div style="text-align: center;">
-  [package.json](package.json) und [package-lock.json]([package-lock.json)
-</div>
 
 ## CSS
 
@@ -46,23 +42,23 @@ lang: de
 <script src="node_modules/darkmode-js/lib/darkmode-js.min.js" type="text/javascript"></script>
 <script src="node_modules/ismobilejs/dist/isMobile.min.js" type="text/javascript"></script>
 <script>
-  var options = {}
-  if (isMobile.phone) {
-    options.bottom = "15px";
-    options.right = "15px";
-  } else {
-    options.bottom = "20px";
-    options.right = "20px";
-  }
-  const darkmode =  new Darkmode(options);
-  window.addEventListener("load", darkmode.showWidget());
-  function refreshBackground() {
-    if (darkmode.isActivated()) {
-      document.documentElement.style.background = "black";
+    var options = {}
+    if (isMobile.phone) {
+        options.bottom = "15px";
+        options.right = "15px";
     } else {
-      document.documentElement.style.background = "white";
+        options.bottom = "20px";
+        options.right = "20px";
     }
-  }
-  refreshBackground();
-  document.getElementsByTagName("button")[0].setAttribute("onclick", "refreshBackground()");
+    const darkmode =  new Darkmode(options);
+    window.addEventListener("load", darkmode.showWidget());
+    function refreshBackground() {
+        if (darkmode.isActivated()) {
+            document.documentElement.style.background = "black";
+        } else {
+            document.documentElement.style.background = "white";
+        }
+    }
+    refreshBackground();
+    document.getElementsByTagName("button")[0].setAttribute("onclick", "refreshBackground()");
 </script>
