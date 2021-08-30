@@ -34,8 +34,7 @@ jobs:
           python3 -m pip install wheel
           python3 -m pip install slmd
           slmd links.md links_sorted.md
-          exit_code="$?"
-          if [ $exit_code -eq 1 ]
+          if [ $? -eq 1 ]
           then
             echo "I sorted something"
             exit 0
@@ -43,7 +42,6 @@ jobs:
             echo "Nothing to sort"
             exit 1
           fi
-
 
       - name: Build website with pandoc
         uses: docker://pandoc/core:latest
