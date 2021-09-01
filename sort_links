@@ -6,5 +6,5 @@ then
     exit 0
 else
     echo "Nothing to sort"
-    exit 1
+    exit 0
 fi
