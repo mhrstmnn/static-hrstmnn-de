@@ -17,6 +17,7 @@ lang: de
 - [slick-theme.css](node_modules/slick-carousel/slick/slick-theme.css)
 - [normalize.css](node_modules/normalize.css/normalize.css)
 - [tailwind.min.css](tailwind.min.css)
+- [bulma.min.css](node_modules/bulma/css/bulma.min.css)
 
 <br>
 
