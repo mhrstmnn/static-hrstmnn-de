@@ -6,7 +6,7 @@ lang: de
 ## CSS
 
 ```html
-<link rel="stylesheet" type="text/css" href="URL" />
+<link rel="stylesheet" type="text/css" href="URL">
 ```
 
 - [bootstrap.min.css](node_modules/bootstrap/dist/css/bootstrap.min.css)
@@ -37,6 +37,7 @@ lang: de
 - [highlight.min.js](node_modules/@highlightjs/cdn-assets/highlight.min.js)
 - [prism.js](node_modules/prismjs/prism.js)
 - [slick.min.js](node_modules/slick-carousel/slick/slick.min.js)
+- [feather.min.js](node_modules/feather-icons/dist/feather.min.js)
 
 <div id="package" style="text-align: center; margin-top: 6rem; margin-bottom: 2.5rem;">[package.json](package.json) und [package-lock.json](package-lock.json)</div>
 
