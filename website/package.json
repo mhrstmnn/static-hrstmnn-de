@@ -2,6 +2,7 @@
   "dependencies": {
     "@highlightjs/cdn-assets": "^11.2.0",
     "@popperjs/core": "^2.10.1",
+    "@tabler/icons": "^1.41.2",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.1.0",
     "bulma": "^0.9.3",
