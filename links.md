@@ -6,7 +6,7 @@ lang: de
 ## CSS
 
 ```html
-<link rel="stylesheet" type="text/css" href="URL" />
+<link rel="stylesheet" type="text/css" href="URL">
 ```
 
 - [bootstrap.min.css](node_modules/bootstrap/dist/css/bootstrap.min.css)
