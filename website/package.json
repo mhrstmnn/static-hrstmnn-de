@@ -6,6 +6,7 @@
     "bootstrap": "^5.1.0",
     "bulma": "^0.9.3",
     "darkmode-js": "^1.5.7",
+    "feather-icons": "^4.28.0",
     "ismobilejs": "^1.1.1",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
