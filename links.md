@@ -19,6 +19,7 @@ lang: de
 - [tailwind.min.css](tailwind.min.css)
 - [bulma.min.css](node_modules/bulma/css/bulma.min.css)
 - [tabler.min.css](node_modules/@tabler/icons/iconfont/tabler-icons.min.css)
+- [bootstrap-icons.css](node_modules/bootstrap-icons/font/bootstrap-icons.css)
 
 <br>
 
