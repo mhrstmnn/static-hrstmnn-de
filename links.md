@@ -18,6 +18,7 @@ lang: de
 - [normalize.css](node_modules/normalize.css/normalize.css)
 - [tailwind.min.css](tailwind.min.css)
 - [bulma.min.css](node_modules/bulma/css/bulma.min.css)
+- [tabler.min.css](node_modules/@tabler/icons/iconfont/tabler-icons.min.css)
 
 <br>
 
