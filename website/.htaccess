@@ -4,6 +4,4 @@
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
-<Directory /node_modules/>
-  Options +Indexes
-</Directory>
+Options +Indexes
