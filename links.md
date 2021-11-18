@@ -43,8 +43,8 @@ lang: de
 
 <div id="package" style="text-align: center; margin-top: 6rem; margin-bottom: 2.5rem;">[package.json](package.json) und [package-lock.json](package-lock.json)</div>
 
-<script src="node_modules/darkmode-js/lib/darkmode-js.min.js" type="text/javascript"></script>
-<script src="node_modules/ismobilejs/dist/isMobile.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="node_modules/darkmode-js/lib/darkmode-js.min.js"></script>
+<script type="text/javascript" src="node_modules/ismobilejs/dist/isMobile.min.js"></script>
 <script>
     var options = {}
     if (isMobile.phone) {
